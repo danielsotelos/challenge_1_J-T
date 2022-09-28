@@ -1,0 +1,12 @@
+import math
+x=int(input("Please enter x: "))
+n=int(input("Please enter n: "))
+
+def exponential_function(k):
+  exp_func=0
+  for i in range (0,n+1):
+    exp_func += math.pow(k, i) / math.factorial(i)
+  return exp_func
+
+print("The approximate value of eˣ is: ", exponential_function(x))
+print("The value of eˣ for comparison is: ", math.exp(x))
